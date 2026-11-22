@@ -12,6 +12,7 @@ async def main():
     dp = Dispatcher()
 
     dp.include_router(common.router)
+    dp.include_router(habits.router)
 
     print("Бот запущен...")
     await dp.start_polling(bot)
